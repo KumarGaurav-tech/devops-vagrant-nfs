@@ -67,7 +67,10 @@ If you see `testfile.txt`, your NFS setup is working correctly! 🎉
 🔹 **Check NFS Service on `node1`**
 ```bash
 sudo systemctl status nfs-kernel-server
-sudo systemctl stop 
+sudo systemctl stop ufw
+OR
+
+you can add it in firewall service instead of disabling the firewall.
 ```
 
 🔹 **Check Mounted Directory on `node2`**
